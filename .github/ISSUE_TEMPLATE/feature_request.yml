@@ -1,0 +1,28 @@
+name: Feature Request
+description: Request a new feature
+title: "[Feature]: "
+labels: ["request", "triage"]
+assignees:
+  - octocat
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for using Archee! Let us know what we can do to make it better!
+  - type: input
+    id: contact
+    attributes:
+      label: Contact Details
+      description: How can we get in touch with you if we need more info?
+      placeholder: ex. email@example.com
+    validations:
+      required: false
+  - type: textarea
+    id: feature-request
+    attributes:
+      label: What sort of feature would you like?
+      description: Also tell us, how critical do you think this feature would be?
+      placeholder: Let us know what feature you're interested in!
+      value: "I would like some cake!"
+    validations:
+      required: true
